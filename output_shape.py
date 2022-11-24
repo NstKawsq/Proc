@@ -11,6 +11,21 @@ def out_shape(container, j):
         type ='афоризм'
         out_quotation.out_quot(container,j,type)
 
+<<<<<<< HEAD
     elif container[j].index=='2':
         type ='загадка'
         out_riddles.out_riddle(container,j,type)
+=======
+
+def filtered_shape(container,j,label):
+    if label == '0':
+        if container[j].index == '0':
+            type = 'цитата'
+            out_Aforizm.out_aforizm(container, j, type)
+
+
+    elif label== '1':
+        if container[j].index == '1':
+            type = 'афоризм'
+            out_quotation.out_quot(container, j, type)
+>>>>>>> Proc2.5=Filtered-output

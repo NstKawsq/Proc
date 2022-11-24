@@ -18,3 +18,21 @@ def print_container(container):
             fout.write(f'\nКонтейнер содержит {razmernost} элементов:')
             fout.write(f'\nКонтейнер очень пуст')
 
+<<<<<<< HEAD
+=======
+
+def print_filtered_container(container, label):
+    razmernost = 0
+    for i in range(len(container)):
+        if container[i] == "":
+            with open("out.txt", "a", encoding='utf-8') as fout:
+                fout.write(f'\nНачинаю сортировку по фильтру {label}')
+                razmernost = i
+            break
+
+    with open("out.txt", "a", encoding='utf-8') as fout:
+        if razmernost != 0:
+            for j in range(0, razmernost):
+                output_shape.filtered_shape(container,j,label)
+
+>>>>>>> Proc2.5=Filtered-output
