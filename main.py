@@ -7,5 +7,8 @@ import container_clean
 container=cont_construct.container_construct()
 container_in.container_filling(container)
 container_out.print_container(container)
+
+container_out.print_filtered_container(container,'0')
+
 container_clean.container_delete(container)
 container_out.print_container(container)
